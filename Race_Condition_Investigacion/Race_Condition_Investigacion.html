@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Race Condition Investigacion</title>
+    <style>
+        body {
+            background-color: #389678;
+            padding-left: 6vw;
+            padding-right: 5vw;
+            color: #001318;
+            font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+            font-weight: 150;
+        }
+        div {
+            display: inline-block;
+            vertical-align: top;
+        }
+        a:link {
+            color: #001318;
+        }
+        a:active {
+            color: #04d338;
+        }
+        a:visited {
+            color: #103637;
+        }
+        a:hover {
+            color: #195452;
+        }
+        .email {
+            color: #001318;
+        }
+        .box {
+            border: 2px solid #2D5A52;
+            margin-top: 10px;
+            padding: 13px 11px 11px 13px;
+            border-radius: 10px;
+            background-color: #3C8E74;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        #contact {
+            float: right;
+        }
+        .contactlist {
+            list-style: none;
+            margin: 5px 0 3px 0;
+        }
+        .photo {
+            width: 10vw;
+            max-width: 150px;
+            border-radius: 9999px;
+            float: right;
+        }
+        #info {
+            width: 75vw;
+            float: left;
+            text-align: justify;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        #diagramimg img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <a href="/index.html">
+            <img src="/images/Designer1.jpeg" class="photo" alt="Haxxor">
+        </a>
+        <p>
+            &nbsp;
+            <br>
+            Contact<br>
+            <a href="https://x.com/Rokfehm">X</a>, <a rel="me" href="https://www.instagram.com/javierigna.cio/">Instagram</a><br>
+            <br>
+            <span class='email' onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">ablaetneufs.reivaj</bdo><br>@hotmail.com</span><br>
+        </p>
+    </div>
+    <div id="info">
+        <h1>Race Condition en Aplicaciones Web: Investigacion</h1>
+        <p>Segun la definicion de OWASP, una Race Condition es:</p>
+        <div class="box">
+            "Es un fallo inesperado que produce un resultado inesperado cuando la sincronizacion de acciones impacta en otras acciones.<br>
+            Un ejemplo puede verse en una aplicacion multihilo en la que se realizan acciones sobre los mismos datos. Las Race Condition<br>
+            por su naturaleza, son dificiles de comprobar."
+        </div>
+        <p>Una Race Condition en el contexto de las Aplicaciones Web, ocurre cuando 2 o mas proceso tratan de acceder al mismo codigo/variables/archivos
+        de manera simultanea</p>
+        <div id="diagramimg">
+            <img src="/images/Race_Condition_Investigacion/process.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
