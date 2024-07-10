@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP/1</title>
+    <style>
+        body {
+            background-color: #389678;
+            color: #001318;
+            font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        a:link {
+            color: #001318;
+        }
+        a:active {
+            color: #04d338;
+        }
+        a:visited {
+            color: #103637;
+        }
+        a:hover {
+            color: #195452;
+        }
+        .email {
+            color: #001318;
+        }
+        .box {
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid #2D5A52;
+            margin-top: 10px;
+            padding: 13px 11px 11px 13px;
+            border-radius: 10px;
+            background-color: #3C8E74;
+            text-align: justify;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .contact {
+            margin-left: 20px;
+            text-align: left;
+        }
+        .contact img {
+            width: 10vw;
+            max-width: 150px;
+            border-radius: 9999px;
+        }
+        .contactlist {
+            list-style: none;
+            margin: 5px 0 3px 0;
+            padding: 0;
+        }
+        #info {
+            text-align: justify;
+        }
+        #info h1, #info h2, #info p, #info ul {
+            margin: 10px 0;
+        }
+        #request img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="info">
+            <h1>HTTP/1.1</h1>
+            <h2>¿Qué es?</h2>
+            <p>Según la definición traducida desde la World Wide Web Consortium (W3), HTTP es:</p>
+            <div class="box">
+                <i>"El Protocolo de Transferencia de Hipertexto (HTTP) es un protocolo a nivel de aplicación para sistemas de información hipermedia distribuidos y colaborativos. Es un protocolo genérico, sin estado, que puede utilizarse para muchas tareas más allá de su uso para hipertexto, como servidores de nombres y sistemas de gestión de objetos distribuidos, mediante la ampliación de sus métodos de solicitud, códigos de error y cabeceras. Una característica de HTTP es la tipificación y negociación de la representación de datos, lo que permite construir sistemas independientes de los datos que se transfieren."</i>
+            </div>
+            <p>Como podemos apreciar en la definición anterior, HTTP es un protocolo (es decir, un conjunto formal de estándares y normas). Su uso es genérico, lo que significa que no se limita únicamente a aplicaciones web. Dado el comportamiento de este protocolo en cuanto a la negociación y tipificación, su uso puede extenderse también a domain-servers y sistemas de objetos distribuidos, esto gracias a la ampliación de sus métodos de solicitud, códigos de error y cabeceras.</p>
+            <h2>Normas y estándares del Protocolo HTTP:</h2>
+            <p>Antes de continuar, parece imprescindible precisar sobre el significado de "Norma" y "Estandar" y contextualizar estos dos terminos.</p>
+            <p>Significado de Norma segun la Real Academia Española:</p>
+            <div class="box">
+                <i>"Regla que se debe seguir o a que se deben ajustar las conductas, tareas, actividades, etc."</i>
+            </div>
+            <p>Segun la definicion de la R.A.E. podemos deducir que aquellas tecnologias que deseen hacer uso de este protocolo deben de seguir normas establecidas.</p>
+            <p>Significado de Estandar segun la Real Academia Española:</p>
+            <div class="box">
+                <i>"Que sirve como tipo, modelo, norma, patrón o referencia."</i>
+            </div>
+            <p>Segun la definicion de la R.A.E., y en el contexto web, podemos dilucidar que HTTP como modelo o referencia permite guiar a los desarolladores y programadores sobre como deben de estructurar las aplicaciones web.</p>
+            <h3>Que es una solicitud en HTTP?</h3>
+            <div id="request">
+                <img src="/images/Http/Request.png" alt="Request">
+            </div>
+            en la comunicacion hay negociacion y tipificación
+                <li>Propósito de las solicitudes.</li>
+                <li>Razones para realizar peticiones, necesidad de interactuar con sitios web.</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="/index.html">
+                <img src="/images/Designer1.jpeg" alt="Haxxor">
+            </a>
+            <p>
+                Contacto<br>
+                <a href="https://x.com/Rokfehm">X</a>, <a rel="me" href="https://www.instagram.com/javierigna.cio/">Instagram</a><br>
+                <span class='email' onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">ablaetneufs.reivaj</bdo><br>@hotmail.com</span><br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,15 +6,14 @@
     <style>
         body {
             background-color: #389678;
-            padding-left: 6vw;
-            padding-right: 5vw;
+            padding-left: 10px;
+            padding-right: 4vw;
             color: #001318;
             font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
             font-weight: 150;
-        }
-        div {
-            display: inline-block;
-            vertical-align: top;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         a:link {
             color: #001318;
@@ -32,6 +31,7 @@
             color: #001318;
         }
         .box {
+            font-family: 'Times New Roman', Times, serif;
             border: 2px solid #2D5A52;
             margin-top: 10px;
             padding: 13px 11px 11px 13px;
@@ -41,8 +41,17 @@
             margin-right: auto;
             text-align: justify;
         }
-        #contact {
-            float: right;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .contact {
+            padding-left: 50px;
+            width: 90px;
+            text-align: right;
+            text-align: left;
         }
         .contactlist {
             list-style: none;
@@ -52,14 +61,11 @@
             width: 10vw;
             max-width: 150px;
             border-radius: 9999px;
-            float: right;
         }
         #info {
-            width: 75vw;
-            float: left;
+            width: 70vw;
             text-align: justify;
             margin-top: 20px;
-            margin-right: 10px;
         }
         #diagramimg img {
             max-width: 50%;
@@ -70,31 +76,38 @@
     </style>
 </head>
 <body>
-    <div class="contact">
-        <a href="../index.html">
-            <img src="../images/Designer1.jpeg" class="photo" alt="Haxxor">
-        </a>
-        <p>
-            &nbsp;
-            <br>
-            Contact<br>
-            <a href="https://x.com/Rokfehm">X</a>, <a rel="me" href="https://www.instagram.com/javierigna.cio/">Instagram</a><br>
-            <br>
-            <span class='email' onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">ablaetneufs.reivaj</bdo><br>@hotmail.com</span><br>
-        </p>
-    </div>
-    <div id="info">
-        <h1>Race Condition en Aplicaciones Web: Investigacion</h1>
-        <p>Segun la definicion de OWASP, una Race Condition es:</p>
-        <div class="box">
-            "Es un fallo inesperado que produce un resultado inesperado cuando la sincronizacion de acciones impacta en otras acciones.<br>
-            Un ejemplo puede verse en una aplicacion multihilo en la que se realizan acciones sobre los mismos datos. Las Race Condition<br>
-            por su naturaleza, son dificiles de comprobar."
+    <div class="container">
+        <div id="info">
+            <h1>Race Condition en Aplicaciones Web: Investigacion</h1>
+            <h2>Que es una Race Condition?</h2>
+            <p>Segun la definicion de OWASP, una Race Condition es:</p>
+            <div class="box">
+                <i>"Es un fallo inesperado que produce un resultado inesperado cuando la sincronizacion de acciones impacta en otras acciones.
+                Un ejemplo puede verse en una aplicacion multihilo en la que se realizan acciones sobre los mismos datos. Las Race Condition
+                por su naturaleza, son dificiles de comprobar."</i>
+            </div>
+            <p>Una Race Condition en este contexto, ocurre cuando dos o mas procesos tratan de acceder al mismo codigo/variables/archivos
+            de manera simultanea sin un control adecuado. Cuando existe una incorrecta sanitizacion en la logica del codigo o infraestructura web, puede conllevar a resultados imprevistos
+        y no intencionales. Los programadores suelen escribir codigo de manera lineal, ignorando la naturaleza paralela en la ejecucion de un servidor web.</p>
+            <p>La sincronizacion en las ejecuciones de subprocesos garantiza que dos o mas procesos o subprocesos no accedan o modifiquen el mismo codigo/variable/archivo 
+                de manera simultanea (A esto se le llama seccion critica). Una Race Condition puede ocurrir si no se aplican las medidas de adecuadas o tecnicas de sincronizacion adecuadas.
+            </p>
+            <div id="diagramimg">
+                <img src="/images/Race_Condition_Investigacion/process.png" alt="">
+            </div>
         </div>
-        <p>Una Race Condition en el contexto de las Aplicaciones Web, ocurre cuando 2 o mas proceso tratan de acceder al mismo codigo/variables/archivos
-        de manera simultanea</p>
-        <div id="diagramimg">
-            <img src="../images/Race_Condition_Investigacion/process.png" alt="">
+        <div class="contact">
+            <a href="/index.html">
+                <img src="/images/Designer1.jpeg" class="photo" alt="Haxxor">
+            </a>
+            <p>
+                &nbsp;
+                <br>
+                Contact<br>
+                <a href="https://x.com/Rokfehm">X</a>, <a rel="me" href="https://www.instagram.com/javierigna.cio/">Instagram</a><br>
+                <br>
+                <span class='email' onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">ablaetneufs.reivaj</bdo><br>@hotmail.com</span><br>
+            </p>
         </div>
     </div>
 </body>
