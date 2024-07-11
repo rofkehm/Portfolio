@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTTP/1</title>
+    <title>HTTP</title>
     <style>
         body {
             background-color: #389678;
@@ -78,30 +78,43 @@
 <body>
     <div class="container">
         <div id="info">
-            <h1>HTTP/1.1</h1>
+            <h1>HTTP</h1>
             <h2>¿Qué es?</h2>
             <p>Según la definición traducida desde la World Wide Web Consortium (W3), HTTP es:</p>
             <div class="box">
                 <i>"El Protocolo de Transferencia de Hipertexto (HTTP) es un protocolo a nivel de aplicación para sistemas de información hipermedia distribuidos y colaborativos. Es un protocolo genérico, sin estado, que puede utilizarse para muchas tareas más allá de su uso para hipertexto, como servidores de nombres y sistemas de gestión de objetos distribuidos, mediante la ampliación de sus métodos de solicitud, códigos de error y cabeceras. Una característica de HTTP es la tipificación y negociación de la representación de datos, lo que permite construir sistemas independientes de los datos que se transfieren."</i>
             </div>
-            <p>Como podemos apreciar en la definición anterior, HTTP es un protocolo (es decir, un conjunto formal de estándares y normas). Su uso es genérico, lo que significa que no se limita únicamente a aplicaciones web. Dado el comportamiento de este protocolo en cuanto a la negociación y tipificación, su uso puede extenderse también a domain-servers y sistemas de objetos distribuidos, esto gracias a la ampliación de sus métodos de solicitud, códigos de error y cabeceras.</p>
-            <h2>Normas y estándares del Protocolo HTTP:</h2>
+            <p>Como podemos apreciar en la definición anterior, HTTP es un protocolo (es decir, un conjunto formal de estándares y normas). Su uso es genérico, lo que significa que no se limita únicamente a aplicaciones web. Dado el comportamiento de este protocolo en cuanto a la negociación y tipificación, su uso puede extenderse también a domain-servers y sistemas de objetos distribuidos, esto gracias a la ampliación de sus métodos de solicitud, códigos de error y cabeceras.</p> <br>
+            <h3>Su propocito</h3>
+            <p>El propocito de HTTP es poder facilitar es servir como base para la comunicacion y transferencia de informacion en la internet. Con el objetivo de mejorar interoperabilidad de los sistemas, para que estos se comuniquen entre si de manera eficiente y estandarizada esto sin destinguir entre plataformas y fabricantes. <br> La facilitacion de la conexion de redes y dispositivos es otro proposito fundamental ya que este protocolo tiene como objetivo crear una red interconectada que permita el acceso y distribucion de informacion a nivel mundial.</p> <br>
+            <h2>Normas y Estándares del Protocolo HTTP:</h2>
             <p>Antes de continuar, parece imprescindible precisar sobre el significado de "Norma" y "Estandar" y contextualizar estos dos terminos.</p>
             <p>Significado de Norma segun la Real Academia Española:</p>
             <div class="box">
                 <i>"Regla que se debe seguir o a que se deben ajustar las conductas, tareas, actividades, etc."</i>
             </div>
-            <p>Segun la definicion de la R.A.E. podemos deducir que aquellas tecnologias que deseen hacer uso de este protocolo deben de seguir normas establecidas.</p>
+            <p>Segun la definicion de la R.A.E. y en el contecto web, podemos deducir que aquellas tecnologias que deseen hacer uso de este protocolo deben de seguir normas establecidas.</p>
             <p>Significado de Estandar segun la Real Academia Española:</p>
             <div class="box">
                 <i>"Que sirve como tipo, modelo, norma, patrón o referencia."</i>
             </div>
-            <p>Segun la definicion de la R.A.E., y en el contexto web, podemos dilucidar que HTTP como modelo o referencia permite guiar a los desarolladores y programadores sobre como deben de estructurar las aplicaciones web.</p>
-            <h3>Que es una solicitud en HTTP?</h3>
+            <p>Segun la definicion de la R.A.E., y en el contexto web, podemos dilucidar que HTTP como modelo o referencia permite guiar a los desarolladores y programadores sobre como deben de estructurar las aplicaciones web.</p> <br>
+            <p>Ya que hemos visto e interiorizado la definicion estandar y norma, procederemos a identificar cuales son las tres reglas principales de uso de este protocolo:</p>
+            <li>Deben comprender y estar al tanto de las especificaciones del protocolo:
+                 <ol>Leer los distintos R.F.C. ("Request for Comments" o Peticion de Comentarios) para cada version del protocolo HTTP (Para HTTP/1 la R.F.C. 2616. Para HTTP/2 la R.F.C. 7540. Para HTTP/3 la R.F.C. 9114) para mantenerse informados sobre las actualizaciones que se van implementando. R.F.C. en la documentacion que proporciona la Intenet Engineering Task Force (I.E.F.T.).</ol>
+            </li>
+            <li> Se debe de realizar una implementacion correcta los metodos:
+                <ol>Los desarrolladores deben asegurarse de implementar de manera correcta de los metodos que utiliza http (GET, POST, etc.) y que se manejen de manera adecuada los codigos de estado, el manejo de estados y la utilizacion de manera apropiada.</ol>
+            </li>
+            <li>Se tiene que tener en consideracion la Seguridad:
+                <ol>Los desarrolladores deberan implementar protecciones que son recomendadas por la E.I.T.F. como el uso de la version segura de HTTP que es HTTPS (Hypertext Transfer Protocol Secure). </ol>
+                </li> <br>
+            <h2>Estructura Basica del Protocolo HTTP</h2>
+            <h3>¿Qué es una solicitud en HTTP?</h3>
             <div id="request">
                 <img src="images/Http/Request.png" alt="Request">
             </div>
-            en la comunicacion hay negociacion y tipificación
+            que es comunicacion hay negociacion y tipificación
                 <li>Propósito de las solicitudes.</li>
                 <li>Razones para realizar peticiones, necesidad de interactuar con sitios web.</li>
             </ul>
